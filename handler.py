@@ -12,7 +12,6 @@ class Key:
     def pressed(self, key) -> None:
         self.__key_format(key)
         self.__word += self.__str_key
-        print(self.__word)
         if key == keyboard.Key.space or key == keyboard.Key.enter:
             self.__save_word()
 
